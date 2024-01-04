@@ -3,13 +3,29 @@
     padding:0;
 }
 
+body {
+    width:100%;
+}
+
 header {
+    width:100%;
     position:sticky;
     white-space: nowrap;
 }
 
+#logo {
+    font-family:serif;
+    font-size: 2em;
+}
+
 #navbar {
-padding: 1em 20% 1em 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar-buttons {
+padding: 1em 2em 1em 2em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,15 +34,27 @@ padding: 1em 20% 1em 20%;
 #navbar li {
     display: inline-block;
     list-style: none;
-    font-size: 1.5rem;
     padding: 0 3em;
     cursor: pointer;
     position: relative;
+    font-size: 1.5em;
+    transition:0.1s;
 }
 
-hr {
-    border-top: 2px solid hwb(0 0% 23%);
-    width:50%;
-    margin:0 auto;
+#navbar li:hover {
+    font-size: 1.6em;
+    transition:0.1s;
+}
+
+#main {
+    width:100%;
+    position:fixed;
+}
+
+#main-container {
+    height: 40em;
+        background:
+               /* top, transparent black, faked with gradient */ 
+               radial-gradient(circle at center, rgba(0, 0, 0, 0.4) 40%, rgba(0,0,0,0.7) 90%),url(src/background-1.jpg);
 
 }
