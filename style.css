@@ -1,12 +1,47 @@
+/* ogólne */ 
 * {
     margin:0;
     padding:0;
 }
 
+.textOpacity {
+    animation: 2s anim-textOpacity;
+    animation-iteration-count:1;
+}
+@keyframes anim-textOpacity {
+    from {opacity:0;}
+    to {opacity:1;}
+  }
+
+
+.lineUp {
+    animation: 2s anim-lineUp ease-out infinite;
+    animation-iteration-count:1;
+  }
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  
+
 body {
     width:100%;
 }
 
+/* nawigacja */
 header {
     width:100%;
     position:sticky;
@@ -54,13 +89,16 @@ padding: 1em 1em 1em 1em;
     color:black;
 }
 
+/* koniec nawigacji */
+
+/* glowna sekcja */
 #main {
     width:100%;
     position:fixed;
     background:
     radial-gradient(circle at center, rgba(104, 1, 1, 0.5) 40%, rgba(0, 0, 0, 0.7) 90%),url(src/background-1.jpg);
 }
-
+ /* fala na górze */
 .wave-1 {
     position: absolute;
     top: 0;
