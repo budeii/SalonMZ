@@ -1,6 +1,10 @@
 /* ogólne */ 
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+
+
 * {
     margin:0;
+    font-family:"bitter";
     padding:0;
 }
 
@@ -144,8 +148,12 @@ padding: 1em 1em 1em 1em;
 /* koniec sekcji głównej */
 
 #galleryContainer {
+    background: linear-gradient(0deg, rgba(255,112,112,1) 0%, rgba(255, 112, 112, 0.718) 100%), url("src/panterka-1.jpg");
+    background-color: rgb(255,112,112);
+    background-repeat: no-repeat;
+    background-size:cover; 
     height: 20em;
-    padding: 3em 0em 15em 0em;
+    padding: 4em 0em 4em 0em;
     width:100%;
     display:flex;
     justify-content:space-around;
@@ -183,41 +191,75 @@ padding: 1em 1em 1em 1em;
 
 /* koniec galerii */
 
+/* poczatek cennika */
+
 #pricing {
     width:100%;
 }
 
 #pricing-container {
+
 height:50em;
 display:flex;
-    justify-content:space-between;
+justify-content:space-around;
+text-align:center;
 }
 
 
 #pricing-container div img {
-    width:50vw;
+    width:35vw;
+    padding-left:10vw;
+    height:50vw;
 }
 
 #table-container {
 display:flex;
-flex-direction:column;
 justify-content:center;
-font-size:1.8em;
+align-items:center;
+font-size:1.5em;
+padding-right:10vw;
+width:35vw;
 }
 
 table {
     width:100%;
-    height:100%;
-
 }
 
-td {
-    padding: 0 0 1em 0;
-    
-}
+table, th, td {
+    border: 2px solid rgba(0, 0, 0, 0.109);
+    border-radius:5px;
+  }
 
 .even {
-    background-color:rgba(255, 0, 0, 0.364);
+    background-color:#ff7070
+}
+
+/* koniec cennika */
+
+/* początek sekcji o salonie */
+
+#about {
+    height: 20em;
+    width:100%;
+}
+
+.wave-2 {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave-2  svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 46px;
+}
+
+.wave-2 .shape-fill {
+    fill: #ff7070;
 }
 
 /* DOKONCZYC TABELKE, ZMIENIC KLASY NA ID, ZROBIC DWIE SEKCJE GÓRA DÓŁ */
+
+/* sources: https://commons.wikimedia.org/wiki/File:Leopard%27s_rosettes.jpg */
