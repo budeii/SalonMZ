@@ -12,14 +12,14 @@
     <header>
         <section id="navbar">
             <div>
-                <p id="logo" class="lineUp">Zaborowska</p>
+                <p id="logo" class="lineUp"><u>Zaborowska</u></p>
             </div>
             <div id="navbar-buttons">
                 <ul class="lineUp">
-                    <li>O salonie</li>
-                    <li>Cennik</li>
-                    <li>Strzyżenie</li>
-                    <li>Galeria</li>
+                    <a href="#about"><li>O salonie</li></a>
+                    <a href="#pricing"><li>Cennik</li></a>
+                    <a href="#appointment"><li>Zapisz się</li></a>
+                    <a href=""><li>Galeria</li></a>
                 </ul>
                 <div>
                     <p id="contact" class="lineUp">Kontakt +48500500500 <br>
@@ -48,8 +48,8 @@
         
         </div>
     </section>
-    <section id="galleryContainer">
-        <div id="gallery" class="lineUp">
+    <section id="gallery">
+        <div id="galleryContainer" class="lineUp">
             <div class="thumbnail">
                 <img src="src/britney-1.jpg" alt="Image 1">
             </div>
@@ -68,7 +68,10 @@
             </svg>
         </div>
         <div id="about-container">
-            
+        <h1><u>O salonie</u></h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Voluptatem eum nisi quam cum fugit eveniet error libero omnis dolor modi impedit neque laborum voluptatibus quo earum aspernatur, 
+            magnam incidunt quia?</p>
         </div>
     </section>
     <section id="pricing">
@@ -79,7 +82,7 @@
             <div id="table-container">
                 <div>
                     <div>
-                        <strong><h2>Nasze usługi</h2></strong>
+                        <strong><h2><u>Cennik</u></h2></strong>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quis magnam porro voluptates libero, officia amet ipsa consequatur ex culpa quas! Libero saepe sunt officiis et! Tempore animi eligendi accusamus.</p>
                     </div>
                     <br>
@@ -135,6 +138,52 @@
             </div>
         </div>
     </section>
+    <section id="appointment">
+        <div id="appointment-container">
+            <div>
+                <div class="text">
+                   <h1><u>Kontakt</u></h1>
+                </div>
+                <br>
+                <form action="#">
+                   <div class="form-row">
+                    <label for="">Imię</label>
+                      <div class="input-data">
+                         <input type="text" maxlength="30" required>
+                      </div>
+                   </div> <br>
+                   <label for="">Numer telefonu</label>
+                   <div class="form-row">
+                      <div class="input-data">
+                         <input type="text" minlength="9" maxlength="11" required>
+                      </div>
+                   </div> <br>
+                   <label for="">Mail</label>
+                   <div class="form-row">
+                      <div class="input-data">
+                         <input type="text" minlength="0" maxlength="50">
+                      </div>
+                   </div> <br>
+                   <label for="">Twoja wiadomość</label>
+                   <div class="form-row">
+                   <div class="input-data">
+                      <textarea rows="8" cols="60" maxlength="450" placeholder="np. Chcę umówić się na ścięcie." required></textarea>
+                      <br />
+                      <div class="form-row submit-btn">
+                         <div class="input-data">
+                            <div class="inner"></div>
+                            <input type="submit" value="Wyślij">
+                         </div>
+                      </div>
+                </form>
+            </div>
+    </section>
+    <div class="wave-3">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    </svg>
+    </div>
+    <footer></footer>
 </body>
 
 </html>
