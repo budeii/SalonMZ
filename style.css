@@ -8,6 +8,10 @@
     padding:0;
 }
 
+html, body {
+    width:100%;
+}
+
 .textOpacity {
     animation: 2s anim-textOpacity;
     animation-iteration-count:1;
@@ -44,10 +48,6 @@ a {
     }
   }
   
-
-body {
-    width:100%;
-}
 
 /* nawigacja */
 header {
@@ -159,7 +159,6 @@ padding: 1em 1em 1em 1em;
     background-color: rgb(255,112,112);
     background-repeat: no-repeat;
     background-size:cover; 
-    height: 20em;
     padding: 4em 0em 4em 0em;
     width:100%;
     display:flex;
@@ -170,7 +169,7 @@ padding: 1em 1em 1em 1em;
 }
 
 /* galeria */
-#galleryContainer {
+#gallery-container {
     position:relative;
     display: flex;
     flex-wrap: nowrap;
@@ -205,8 +204,6 @@ padding: 1em 1em 1em 1em;
 }
 
 #pricing-container {
-
-height:50em;
 display:flex;
 justify-content:space-around;
 text-align:center;
@@ -223,7 +220,7 @@ text-align:center;
 display:flex;
 justify-content:center;
 align-items:center;
-font-size:1.5em;
+font-size:1.2em;
 padding-right:10vw;
 width:35vw;
 }
@@ -263,8 +260,9 @@ table, th, td {
 }
 
 #about {
-    height: 20em;
+    padding:0 0 5em 0;
     width:100%;
+    position:relative;
 }
 
 #about-container {
@@ -292,7 +290,7 @@ table, th, td {
 #appointment {
     font-size:1.5em;
     width:100%;
-    height:30em;
+    padding-top:2em;
     display:flex;
     text-align:center;
     justify-content:space-around;
@@ -322,12 +320,9 @@ input[type=submit] {
   }
 
   .wave-3 {
-    position: relative;
-    bottom: 0;
-    left: 0;
     width: 100%;
+    height:15em;
     overflow: hidden;
-    line-height: 0;
     transform: rotate(180deg);
 }
 
@@ -335,7 +330,7 @@ input[type=submit] {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 111px;
+    height: 120px;
 }
 
 .wave-3 .shape-fill {
@@ -346,14 +341,57 @@ input[type=submit] {
 
 footer {
     width:100%;
-    height:15vh;
+    height:10vh;
     background: linear-gradient(0deg, rgba(255,112,112,0.4842739586068803) 0%, rgba(255,112,112,1) 100%), url("src/panterka-1.jpg");
     background-color: rgb(255,112,112);
     background-repeat: no-repeat;
     background-size:cover; 
 }
 
+@media (max-width: 767px) {
+    body {
+        box-sizing: border-box;
+    }
+    
+    #navbar, #navbar-buttons {
+        all: initial;
+    }
 
+    #navbar {
+        font-size:1.5em;
+    }
+
+    #navbar-buttons ul li, #logo, #contact-container {
+        text-align:center;
+    }
+
+    #navbar li {
+        display:block;
+        padding:1em 0 1em 0;
+    }
+
+
+    /*navbar*/
+    #main {
+        font-size:0.5em;
+    }
+    /*main*/
+    #gallery-container {
+        flex-wrap:wrap;
+        gap:1em;
+    }
+    .thumbnail {
+        max-width:auto;
+        max-height:auto;
+    }
+    /*gallery*/
+    #pricing-container-photo {
+        display:none;
+    }
+    #table-container {
+        width:70vw;
+    }
+  }
 
 /* DOKONCZYC TABELKE, ZMIENIC KLASY NA ID, ZROBIC DWIE SEKCJE GÓRA DÓŁ */
 

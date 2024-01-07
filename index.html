@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.7">
     <link rel="stylesheet" href="style.css">
     <title>Salon Fryzjerski</title>
 </head>
@@ -16,12 +16,20 @@
             </div>
             <div id="navbar-buttons">
                 <ul class="lineUp">
-                    <a href="#about"><li>O salonie</li></a>
-                    <a href="#pricing"><li>Cennik</li></a>
-                    <a href="#appointment"><li>Zapisz się</li></a>
-                    <a href=""><li>Galeria</li></a>
+                    <a href="#gallery">
+                        <li>Galeria</li>
+                    </a>
+                    <a href="#about">
+                        <li>O salonie</li>
+                    </a>
+                    <a href="#pricing">
+                        <li>Cennik</li>
+                    </a>
+                    <a href="#appointment">
+                        <li>Zapisz się</li>
+                    </a>
                 </ul>
-                <div>
+                <div id="contact-container">
                     <p id="contact" class="lineUp">Kontakt +48500500500 <br>
                         Czynne Pon-Pt 10:00-15:00</p>
                 </div>
@@ -42,14 +50,14 @@
                 <p>Lorem ipsum dolor sit amet.</p>
                 <b id="main-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, eaque.</b>
                 <p>Zapisz się teraz!</p>
-            </div> 
+            </div>
         </div>
         <div id="wave-2">
-        
+
         </div>
     </section>
     <section id="gallery">
-        <div id="galleryContainer" class="lineUp">
+        <div id="gallery-container" class="lineUp">
             <div class="thumbnail">
                 <img src="src/britney-1.jpg" alt="Image 1">
             </div>
@@ -58,83 +66,107 @@
             </div>
             <div class="thumbnail">
                 <img src="src/britney-1.jpg" alt="Image 3">
-            </div>            
+            </div>
         </div>
     </section>
     <section id="about">
         <div class="wave-2">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
             </svg>
         </div>
         <div id="about-container">
-        <h1><u>O salonie</u></h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Voluptatem eum nisi quam cum fugit eveniet error libero omnis dolor modi impedit neque laborum voluptatibus quo earum aspernatur, 
-            magnam incidunt quia?</p>
+            <h1><u>O salonie</u></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem eum nisi quam cum fugit eveniet error libero omnis dolor modi impedit neque laborum
+                voluptatibus quo earum aspernatur,
+                magnam incidunt quia?</p> <br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d420.2053336198777!2d14.53453110639984!3d53.43198721389402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47aa093958ed7ec7%3A0xf9fa79c95245bcff!2sSalon%20Fryzjerski%20Ma%C5%82gorzata%20Zaborowska!5e0!3m2!1spl!2spl!4v1704656512567!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+        
     </section>
     <section id="pricing">
         <div id="pricing-container">
-            <div>
+            <div id="pricing-container-photo">
                 <img src="src/pricing-photo.jpeg" alt="">
             </div>
             <div id="table-container">
                 <div>
                     <div>
-                        <strong><h2><u>Cennik</u></h2></strong>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quis magnam porro voluptates libero, officia amet ipsa consequatur ex culpa quas! Libero saepe sunt officiis et! Tempore animi eligendi accusamus.</p>
+                        <strong>
+                            <h2><u>Cennik</u></h2>
+                        </strong>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quis magnam porro voluptates
+                            libero, officia amet ipsa consequatur ex culpa quas! Libero saepe sunt officiis et! Tempore
+                            animi eligendi accusamus.</p>
                     </div>
                     <br>
-                <table id="table">
-                    <thead>
-                    <tr class="even">
-                        <th class="column-1">Usługi</th><th class="column-2">Cena</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td class="column-1">Single Process Color</td><td class="column-2">$80+</td>
-                    </tr>
-                    <tr class="even">
-                        <td class="column-1">Men's Hair Color</td><td class="column-2">$55+</td>
-                    </tr>
-                    <tr>
-                        <td class="column-1">Partial Highlight</td><td class="column-2">$125+</td>
-                    </tr>
-                    <tr class="even">
-                        <td class="column-1">Full Highlight</td><td class="column-2">$155+</td>
-                    </tr>
-                    <tr>
-                        <td class="column-1">Partial Highlight / Single Process</td><td class="column-2">$205+</td>
-                    </tr>
-                    <tr class="even">
-                        <td class="column-1">Full Highlight / Single Process</td><td class="column-2">$235+</td>
-                    </tr>
-                    <tr>
-                        <td class="column-1">Partial Balayage</td><td class="column-2">$145+</td>
-                    </tr>
-                    <tr class="even">
-                        <td class="column-1">Full Balayage</td><td class="column-2">$180+</td>
-                    </tr>
-                    <tr>
-                        <td class="column-1">Corrective Color Hourly</td><td class="column-2">$95+</td>
-                    </tr>
-                    <tr class="even">
-                        <td class="column-1">Color Gloss Toner W/ Color Service</td><td class="column-2">$38+</td>
-                    </tr>
-                    <tr>
-                        <td class="column-1">Olaplex / B3 Treatment</td><td class="column-2">$30+</td>
-                    </tr>
-                    <tr class="even">
-                        <td class="column-1">Double process (Bleach and Tone)</td><td class="column-2">$160+</td>
-                    </tr>
-                    <tr>
-                        <td class="column-1">Blow-Dry W / Color Service No Cut</td><td class="column-2">$30</td>
-                    </tr>
-                    </tbody>
-                </table>
-                </div>   
+                    <table id="table">
+                        <thead>
+                            <tr class="even">
+                                <th class="column-1">Usługi</th>
+                                <th class="column-2">Cena</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="column-1">Single Process Color</td>
+                                <td class="column-2">$80+</td>
+                            </tr>
+                            <tr class="even">
+                                <td class="column-1">Men's Hair Color</td>
+                                <td class="column-2">$55+</td>
+                            </tr>
+                            <tr>
+                                <td class="column-1">Partial Highlight</td>
+                                <td class="column-2">$125+</td>
+                            </tr>
+                            <tr class="even">
+                                <td class="column-1">Full Highlight</td>
+                                <td class="column-2">$155+</td>
+                            </tr>
+                            <tr>
+                                <td class="column-1">Partial Highlight / Single Process</td>
+                                <td class="column-2">$205+</td>
+                            </tr>
+                            <tr class="even">
+                                <td class="column-1">Full Highlight / Single Process</td>
+                                <td class="column-2">$235+</td>
+                            </tr>
+                            <tr>
+                                <td class="column-1">Partial Balayage</td>
+                                <td class="column-2">$145+</td>
+                            </tr>
+                            <tr class="even">
+                                <td class="column-1">Full Balayage</td>
+                                <td class="column-2">$180+</td>
+                            </tr>
+                            <tr>
+                                <td class="column-1">Corrective Color Hourly</td>
+                                <td class="column-2">$95+</td>
+                            </tr>
+                            <tr class="even">
+                                <td class="column-1">Color Gloss Toner W/ Color Service</td>
+                                <td class="column-2">$38+</td>
+                            </tr>
+                            <tr>
+                                <td class="column-1">Olaplex / B3 Treatment</td>
+                                <td class="column-2">$30+</td>
+                            </tr>
+                            <tr class="even">
+                                <td class="column-1">Double process (Bleach and Tone)</td>
+                                <td class="column-2">$160+</td>
+                            </tr>
+                            <tr>
+                                <td class="column-1">Blow-Dry W / Color Service No Cut</td>
+                                <td class="column-2">$30</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </section>
@@ -142,46 +174,38 @@
         <div id="appointment-container">
             <div>
                 <div class="text">
-                   <h1><u>Kontakt</u></h1>
+                    <h1><u>Kontakt</u></h1>
                 </div>
                 <br>
-                <form action="#">
-                   <div class="form-row">
-                    <label for="">Imię</label>
-                      <div class="input-data">
-                         <input type="text" maxlength="30" required>
-                      </div>
-                   </div> <br>
-                   <label for="">Numer telefonu</label>
-                   <div class="form-row">
-                      <div class="input-data">
-                         <input type="text" minlength="9" maxlength="11" required>
-                      </div>
-                   </div> <br>
-                   <label for="">Mail</label>
-                   <div class="form-row">
-                      <div class="input-data">
-                         <input type="text" minlength="0" maxlength="50">
-                      </div>
-                   </div> <br>
-                   <label for="">Twoja wiadomość</label>
-                   <div class="form-row">
-                   <div class="input-data">
-                      <textarea rows="8" cols="60" maxlength="450" placeholder="np. Chcę umówić się na ścięcie." required></textarea>
-                      <br />
-                      <div class="form-row submit-btn">
-                         <div class="input-data">
-                            <div class="inner"></div>
-                            <input type="submit" value="Wyślij">
-                         </div>
-                      </div>
+                <form action="index.html" method="POST">
+                    <label for="name">Imię</label>
+                    <div class="form-row">
+                            <input type="text" maxlength="30" id="name" required>
+                    </div> <br>
+                    <label for="tel">Numer telefonu</label>
+                    <div class="form-row">
+                            <input type="text" minlength="9" maxlength="11" name="tel" required>
+                    </div> <br>
+                    <label for="mail">Mail</label>
+                    <div class="form-row">
+                            <input type="text" minlength="0" maxlength="50" name="mail">
+                    </div> <br>
+                    <label for="notice">Twoja wiadomość</label>
+                    <div class="form-row">
+                            <textarea rows="8" cols="60" maxlength="450" name="notice"
+                                placeholder="np. Chcę umówić się na ścięcie." required></textarea>
+                            <br>
+                    <input type="submit" value="Wyślij">
                 </form>
             </div>
+        </div>
     </section>
     <div class="wave-3">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-    </svg>
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path
+                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                class="shape-fill"></path>
+        </svg>
     </div>
     <footer></footer>
 </body>
