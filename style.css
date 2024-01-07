@@ -134,7 +134,7 @@ padding: 1em 1em 1em 1em;
 
 #main-content {
     width:100%;
-    height:40em;
+    height:50em;
     display:flex;
     justify-content:space-around;
     align-content:center;
@@ -220,7 +220,7 @@ text-align:center;
 display:flex;
 justify-content:center;
 align-items:center;
-font-size:1.2em;
+font-size:2em;
 padding-right:10vw;
 width:35vw;
 }
@@ -281,6 +281,10 @@ table, th, td {
 
 #about-container p {
     font-size:4vh;
+}
+
+#map-small {
+    display:none;
 }
 
 /* koniec cennika */
@@ -373,8 +377,18 @@ footer {
 
     /*navbar*/
     #main {
-        font-size:0.5em;
+        font-size:0.8em;
+        width:auto;
     }
+
+    #map {
+        display:none;
+    }
+
+    #map-small {
+        display:block;
+    }
+
     /*main*/
     #gallery-container {
         flex-wrap:wrap;
@@ -391,6 +405,32 @@ footer {
     #table-container {
         width:70vw;
     }
+
+    #pricing-container h1 {
+        font-size:70px;
+    }
+
+    #table-container {
+        padding: 0;
+    }
+
+    /*pricing*/
+    #about-container p {
+        font-size:2em;
+    }
+
+    #about-container h1 {
+        font-size:70px;
+    }
+    
+
+    /*about*/
+    #appointment-container h1{
+        font-size:70px;
+    }
+
+
+    /*notice*/
   }
 
 /* DOKONCZYC TABELKE, ZMIENIC KLASY NA ID, ZROBIC DWIE SEKCJE GÓRA DÓŁ */

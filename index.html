@@ -46,7 +46,7 @@
             </svg>
         </div>
         <div id="main-content">
-            <div class="textOpacity">
+            <div>
                 <p>Lorem ipsum dolor sit amet.</p>
                 <b id="main-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, eaque.</b>
                 <p>Zapisz się teraz!</p>
@@ -79,12 +79,27 @@
             </svg>
         </div>
         <div id="about-container">
-            <h1><u>O salonie</u></h1>
+            <h1><u>O salonie</u></h1> <br>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Voluptatem eum nisi quam cum fugit eveniet error libero omnis dolor modi impedit neque laborum
                 voluptatibus quo earum aspernatur,
                 magnam incidunt quia?</p> <br>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d420.2053336198777!2d14.53453110639984!3d53.43198721389402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47aa093958ed7ec7%3A0xf9fa79c95245bcff!2sSalon%20Fryzjerski%20Ma%C5%82gorzata%20Zaborowska!5e0!3m2!1spl!2spl!4v1704656512567!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4
+                    20.2053336198777!2d14.53453110639984!3d53.43198721389402!2m3!1f0!2f0!3f0!3m2!1i
+                    1024!2i768!4f13.1!3m3!1m2!1s0x47aa093958ed7ec7%3A0xf9fa79c95245bcff!2sSalon%20Fryzje
+                    rski%20Ma%C5%82gorzata%20Zaborowska!5e0!3m2!1spl!2spl!4v1704656512567!5m
+                    2!1spl!2spl" width="650" height="450" style="border:0;" allowfullscreen="
+                    " loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div id="map-small">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4
+                    20.2053336198777!2d14.53453110639984!3d53.43198721389402!2m3!1f0!2f0!3f0!3m2!1i
+                    1024!2i768!4f13.1!3m3!1m2!1s0x47aa093958ed7ec7%3A0xf9fa79c95245bcff!2sSalon%20Fryzje
+                    rski%20Ma%C5%82gorzata%20Zaborowska!5e0!3m2!1spl!2spl!4v1704656512567!5m
+                    2!1spl!2spl" width="400" height="300" style="border:0;" allowfullscreen="
+                    " loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
         </div>
         
     </section>
@@ -97,7 +112,7 @@
                 <div>
                     <div>
                         <strong>
-                            <h2><u>Cennik</u></h2>
+                            <h1><u>Cennik</u></h1> <br>
                         </strong>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quis magnam porro voluptates
                             libero, officia amet ipsa consequatur ex culpa quas! Libero saepe sunt officiis et! Tempore
@@ -173,9 +188,7 @@
     <section id="appointment">
         <div id="appointment-container">
             <div>
-                <div class="text">
                     <h1><u>Kontakt</u></h1>
-                </div>
                 <br>
                 <form action="index.html" method="POST">
                     <label for="name">Imię</label>
@@ -192,7 +205,7 @@
                     </div> <br>
                     <label for="notice">Twoja wiadomość</label>
                     <div class="form-row">
-                            <textarea rows="8" cols="60" maxlength="450" name="notice"
+                            <textarea rows="8" cols="40" maxlength="450" name="notice"
                                 placeholder="np. Chcę umówić się na ścięcie." required></textarea>
                             <br>
                     <input type="submit" value="Wyślij">
