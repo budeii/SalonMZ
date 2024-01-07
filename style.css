@@ -220,7 +220,7 @@ text-align:center;
 display:flex;
 justify-content:center;
 align-items:center;
-font-size:2em;
+font-size:1.2em;
 padding-right:10vw;
 width:35vw;
 }
@@ -352,7 +352,7 @@ footer {
     background-size:cover; 
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 1000px){
     body {
         box-sizing: border-box;
     }
@@ -362,7 +362,7 @@ footer {
     }
 
     #navbar {
-        font-size:1.5em;
+        font-size:1.7em;
     }
 
     #navbar-buttons ul li, #logo, #contact-container {
@@ -371,13 +371,14 @@ footer {
 
     #navbar li {
         display:block;
-        padding:1em 0 1em 0;
+        font-size:1.8em;
+        padding:0.5em 0 0.5em 0;
     }
 
 
     /*navbar*/
     #main {
-        font-size:0.8em;
+        font-size:0.4em;
         width:auto;
     }
 
@@ -404,6 +405,7 @@ footer {
     }
     #table-container {
         width:70vw;
+        font-size:1.7em;
     }
 
     #pricing-container h1 {
@@ -429,10 +431,26 @@ footer {
         font-size:70px;
     }
 
+    input[type=text] {
+        padding: 0.5vw;
+        font-size:4vw;
+        text-align: center;
+        box-sizing: border-box;
+      }
+    
+    input[type=submit] {
+        font-size:4vw;
+        padding:1vw 10vw 1vw 10vw;
+      }
+    
+      textarea {
+        font-size:3vw;
+        text-align: center;
+      }
 
     /*notice*/
   }
 
-/* DOKONCZYC TABELKE, ZMIENIC KLASY NA ID, ZROBIC DWIE SEKCJE GÓRA DÓŁ */
+/* Do dokończenia: media - zmienić rozmiary guzików formularza, wymienić obrazki */
 
 /* sources: https://commons.wikimedia.org/wiki/File:Leopard%27s_rosettes.jpg */
